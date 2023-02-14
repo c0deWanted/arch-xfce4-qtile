@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <value type="int" value="2"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=11;x=631;y=12"/>
+      <property name="length" type="double" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="22"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="4"/>
+        <value type="int" value="3"/>
+        <value type="int" value="26"/>
+        <value type="int" value="5"/>
+        <value type="int" value="13"/>
+      </property>
+      <property name="background-alpha" type="uint" value="76"/>
+      <property name="output-name" type="string" value="Automatic"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.1803921568627451"/>
+        <value type="double" value="0.20392156862745103"/>
+        <value type="double" value="0.25098039215686274"/>
+        <value type="double" value="0.80000000000000004"/>
+      </property>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="span-monitors" type="bool" value="false"/>
+      <property name="icon-size" type="uint" value="22"/>
+      <property name="disable-struts" type="bool" value="false"/>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="position" type="string" value="p=1;x=4948;y=1205"/>
+      <property name="size" type="uint" value="120"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+      </property>
+      <property name="length" type="double" value="1"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="10"/>
+      </property>
+      <property name="enter-opacity" type="uint" value="50"/>
+      <property name="leave-opacity" type="uint" value="50"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="span-monitors" type="bool" value="false"/>
+      <property name="nrows" type="uint" value="3"/>
+      <property name="autohide-behavior" type="uint" value="2"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="output-name" type="string" value="Primary"/>
+      <property name="mode" type="uint" value="1"/>
+    </property>
+    <property name="dark-mode" type="bool" value="true"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="clipman" type="empty">
+      <property name="tweaks" type="empty">
+        <property name="never-confirm-history-clear" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-13" type="string" value="xkb">
+      <property name="display-type" type="uint" value="2"/>
+      <property name="display-name" type="uint" value="0"/>
+      <property name="caps-lock-indicator" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="false"/>
+      <property name="display-tooltip-icon" type="bool" value="false"/>
+      <property name="group-policy" type="uint" value="0"/>
+    </property>
+    <property name="plugin-10" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="true"/>
+    </property>
+    <property name="plugin-26" type="string" value="power-manager-plugin"/>
+    <property name="plugin-3" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="volumeicon"/>
+        <value type="string" value="system-config-printer"/>
+        <value type="string" value="gpick"/>
+        <value type="string" value="deadbeef"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="ethernet network connection “wired connection 1” active"/>
+        <value type="string" value="clipman"/>
+      </property>
+      <property name="icon-size" type="int" value="22"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="SimpleScreenRecorder"/>
+        <value type="string" value="indicator-solaar"/>
+        <value type="string" value="steam"/>
+      </property>
+    </property>
+    <property name="plugin-5" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance10053;chromium.instance10351;chromium.instance1090955;chromium.instance116462;chromium.instance119282;chromium.instance137288;chromium.instance144209;chromium.instance302571;chromium.instance4122;chromium.instance5058;chromium.instance6386;chromium.instance74558;chromium.instance8519;chromium.instance97115;firefox.instance11219;firefox.instance12100;firefox.instance1346;firefox.instance18249;qutebrowser.instance102122;qutebrowser.instance107879;qutebrowser.instance1080288;qutebrowser.instance110328;qutebrowser.instance1110400;qutebrowser.instance118124;qutebrowser.instance118464;qutebrowser.instance128939;qutebrowser.instance1341;qutebrowser.instance1392;qutebrowser.instance142530;qutebrowser.instance1448;qutebrowser.instance1463;qutebrowser.instance1502;qutebrowser.instance15037;qutebrowser.instance1509;qutebrowser.instance1523;qutebrowser.instance1537;qutebrowser.instance1606;qutebrowser.instance1629;qutebrowser.instance169340;qutebrowser.instance1814868;qutebrowser.instance1981;qutebrowser.instance1986;qutebrowser.instance2001398;qutebrowser.instance2036;qutebrowser.instance207441;qutebrowser.instance21828;qutebrowser.instance2230;qutebrowser.instance23484;qutebrowser.instance23720;qutebrowser.instance240248;qutebrowser.instance24958;qutebrowser.instance261281;qutebrowser.instance26813;qutebrowser.instance2894;qutebrowser.instance31902;qutebrowser.instance345507;qutebrowser.instance374742;qutebrowser.instance377131;qutebrowser.instance382209;qutebrowser.instance40113;qutebrowser.instance4208;qutebrowser.instance4264;qutebrowser.instance43507;qutebrowser.instance4389;qutebrowser.instance4705;qutebrowser.instance51920;qutebrowser.instance525843;qutebrowser.instance534015;qutebrowser.instance5504;qutebrowser.instance55152;qutebrowser.instance59370;qutebrowser.instance6460;qutebrowser.instance6506;qutebrowser.instance7040;qutebrowser.instance7209;qutebrowser.instance741673;qutebrowser.instance78306;qutebrowser.instance82249;qutebrowser.instance89220;qutebrowser.instance90733;qutebrowser.instance94732;qutebrowser.instance95301;qutebrowser.instance9668;vlc"/>
+      <property name="blacklisted-players" type="string" value=""/>
+    </property>
+    <property name="plugin-1" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-font" type="string" value="Mononoki Nerd Font Bold 16"/>
+    </property>
+    <property name="plugin-4" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+  </property>
+</channel>

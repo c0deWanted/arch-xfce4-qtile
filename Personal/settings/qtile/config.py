@@ -108,13 +108,13 @@ keys.extend([
 def init_group_names():
     return [("1", {'layout': 'columns'}),
             ("2", {'layout': 'columns'}),
-            ("2", {'layout': 'columns'}),
             ("3", {'layout': 'columns'}),
-            ("3", {'layout': 'columns'}),
-            ("3", {'layout': 'columns'}),
-            ("MAX", {'layout': 'max'}),
+            ("4", {'layout': 'columns'}),
             ("MAX", {'layout': 'max'}),
             ("BSP", {'layout': 'bsp'}),
+            #("MEDIA", {'layout': 'columns'}),
+            #("MAIL", {'layout': 'columns'}),
+            #("MON", {'layout': 'bsp'}),
             ]
 
 def init_groups():
@@ -129,6 +129,7 @@ for i, (name, kwargs) in enumerate(group_names, 1):
     keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name)))
 
 # COLORS FOR THE BAR
+#Theme name : RavenDark
 def init_colors():
     return [
         ["#282C34", "#282C34"], # 0 : main background : dark grey - doom one
@@ -142,10 +143,19 @@ def init_colors():
     ]
 colors = init_colors()
 
+# def init_layout_theme():
+#     return {"margin":7,
+#             "border_width":2,
+#             "border_focus": colors[2],
+#             "border_normal": colors[0]
+#             }
+
+# layout_theme = init_layout_theme()
+
 layouts = [
     layout.Columns(margin=5, border_width=1, border_focus=colors[3], border_normal=colors[0]),
     layout.Bsp(margin=0, border_width=0),
-    #layout.Floating(margin=0, border_width=2, border_focus=colors[3], border_normal=colors[0]),
+    #layout.Floating(border_width=1, border_focus=colors[3], border_normal=colors[0]),
     layout.Max(margin=22, border_width=0),
 ]
 
@@ -177,6 +187,42 @@ screens = [
                     background = colors[0],
                     **powerline,
                 ),
+                # widget.Sep(
+                #         linewidth = 0,
+                #         padding = 1,
+                #         background = colors[0],
+                #         **powerline,
+                # ),
+                # widget.Sep(
+                #         linewidth = 0,
+                #         padding = 1,
+                #         background = colors[1],
+                #         **powerline,
+                # ),
+                # widget.Sep(
+                #         linewidth = 0,
+                #         padding = 8,
+                #         background = colors[1],
+                #         **powerline,
+                # ),
+                # widget.Sep(
+                #         linewidth = 0,
+                #         padding = 50,
+                #         background = colors[0],
+                #         **powerline,
+                # ),
+                # widget.Sep(
+                #         linewidth = 0,
+                #         padding = 1,
+                #         background = colors[2],
+                #         **powerline,
+                # ),
+                # widget.Sep(
+                #         linewidth = 0,
+                #         padding = 1,
+                #         background = colors[3],
+                #         **powerline,
+                # ),
                 widget.WindowName(
                     font="Mononoki Nerd Font Mono bold",
                     fontsize = 18,
@@ -193,6 +239,7 @@ screens = [
                 widget.CurrentLayout(
                     font = "Mononoki Nerd Font Mono bold",
                     fontsize = 18,
+                    #padding = 20,
                     foreground = colors[6],
                     background = colors[2],
                     **powerline,
@@ -207,6 +254,7 @@ screens = [
                     threshold = 90,
                     fmt = 'C:{}',
                     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('hardinfo')},
+                    #padding = 10,
                     update_interval = 1,
                 ),
                 widget.ThermalSensor(
@@ -217,6 +265,7 @@ screens = [
                     **powerline,
                     threshold = 90,
                     fmt = 'P:{}',
+                    #padding = 5,
                     update_interval = 1,
                 ),
                 widget.NvidiaSensors(
@@ -226,6 +275,7 @@ screens = [
                     foreground_alert = colors[3],
                     background = colors[7],
                     **powerline,
+                    #padding = 20,
                     format = 'G:{temp}°C'
                 ),
                 widget.KeyboardLayout(
@@ -288,6 +338,24 @@ screens = [
                     background = colors[0],
                     **powerline,
                 ),
+                # widget.Sep(
+                #     linewidth = 0,
+                #     #padding = 20,
+                #     background = colors[0],
+                #     **powerline,
+                # ),
+                # widget.Sep(
+                #     linewidth = 0,
+                #     padding = 1,
+                #     background = colors[2],
+                #     **powerline,
+                # ),
+                # widget.Sep(
+                #     linewidth = 0,
+                #     padding = 1,
+                #     background = colors[3],
+                #     **powerline,
+                # ),
                 widget.WindowName(
                     font="Mononoki Nerd Font Mono bold",
                     fontsize = 21,
@@ -308,6 +376,7 @@ screens = [
                     colour_have_updates = colors[0],
                     colour_no_updates = colors[1],
                     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e sudo pacman -Syu')},
+                    #padding = 2,
                 ),
                 widget.Sep(
                     linewidth = 0,
@@ -318,6 +387,7 @@ screens = [
                 widget.CurrentLayout(
                     font = "Mononoki Nerd Font Mono bold",
                     fontsize = 21,
+                    #padding = 20,
                     foreground = colors[0],
                     background = colors[3],
                     **powerline,
@@ -332,6 +402,7 @@ screens = [
                     threshold = 90,
                     fmt = 'C:{}',
                     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('hardinfo')},
+                    #padding = 5,
                     update_interval = 1,
                 ),
                 widget.ThermalSensor(
@@ -342,6 +413,7 @@ screens = [
                     **powerline,
                     threshold = 90,
                     fmt = 'P:{}',
+                    #padding = 20,
                     update_interval = 1,
                 ),
                 widget.NvidiaSensors(
@@ -351,6 +423,7 @@ screens = [
                     foreground_alert = colors[3],
                     background = colors[7],
                     **powerline,
+                    #padding = 20,
                     format = 'G:{temp}°C'
                 ),
                 widget.KeyboardLayout(

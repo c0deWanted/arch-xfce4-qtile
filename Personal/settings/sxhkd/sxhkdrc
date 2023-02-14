@@ -39,13 +39,13 @@ super + t
 super + z
     xfce4-power-manager -c
 
-# #Pamac-manager
-# super + p
-#     pamac-manager
+#Pamac-manager
+super + p
+    pamac-manager
 
-# #xfce4-settings
-# super + s
-#     xfce4-settings-manager
+#xfce4-settings
+super + s
+    xfce4-settings-manager
 
 #Htop
 super + d
