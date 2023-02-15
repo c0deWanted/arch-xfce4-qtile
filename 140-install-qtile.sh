@@ -84,6 +84,7 @@ for name in "${list[@]}" ; do
     func_install $name
 done
 
+yay -S --noconfirm --needed qtile-extras
 
 cp -rf $installed_dir/Personal/settings/qtile* $HOME/.config/
 cp -rf $installed_dir/Personal/settings/sxhkd* $HOME/.config/
