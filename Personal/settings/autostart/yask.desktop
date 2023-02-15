@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=yask
+Comment=
+Exec=xfce4-terminal -e 'xrandr --output DP-4 --gamma 0.9 --brightness 0.6'
+TryExec=xfce4-terminal -e 'xrandr --output DP-4 --gamma 0.9 --brightness 0.6'
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
+Terminal=false
+Hidden=false

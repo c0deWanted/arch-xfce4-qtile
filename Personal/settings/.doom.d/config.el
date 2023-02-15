@@ -82,8 +82,8 @@
 ;; they are implemented.
 ;;
 ;;Transparency
-(set-frame-parameter (selected-frame) 'alpha '(90 . 50))
-(add-to-list 'default-frame-alist '(alpha . (90 . 50)))
+(set-frame-parameter (selected-frame) 'alpha '(90 . 70))
+(add-to-list 'default-frame-alist '(alpha . (90 . 70)))
 ;;Toggle transparency with C-c t
 (defun toggle-transparency ()
    (interactive)

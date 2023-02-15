@@ -31,30 +31,62 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
 ##################################################################################################################
 
-# echo
-# tput setaf 3
-# echo "Installing personal settings of variety - second time"
-# echo
-# [ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
-# cp $installed_dir/settings/variety/variety.conf ~/.config/variety/
-# [ -d /etc/skel/.config/variety ] || sudo mkdir -p /etc/skel/.config/variety
-# sudo cp $installed_dir/settings/variety/variety.conf /etc/skel/.config/variety/
-# tput sgr0
-# echo
-
 echo
 tput setaf 3
 echo "################################################################"
-echo "FINAL SKEL"
-echo "Copying all files and folders from /etc/skel to ~"
-echo "First we make a backup of .config"
-echo "Wait for it ...."
+echo "################### Qtile"
 echo "################################################################"
 tput sgr0
 echo
 
-cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-cp -arf /etc/skel/. ~
+func_install() {
+    if pacman -Qi $1 &> /dev/null; then
+        tput setaf 2
+        echo "###############################################################################"
+        echo "################## The package "$1" is already installed"
+        echo "###############################################################################"
+        echo
+        tput sgr0
+    else
+        tput setaf 3
+        echo "###############################################################################"
+        echo "##################  Installing package "  $1
+        echo "###############################################################################"
+        echo
+        tput sgr0
+        sudo pacman -S --noconfirm --needed $1
+    fi
+}
+
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Install qtile"
+echo "################################################################"
+tput sgr0
+echo
+
+
+list=(
+lxappearance
+picom
+qtile
+rofi-theme-fonts
+sxhkd
+volumeicon
+)
+
+count=0
+
+for name in "${list[@]}" ; do
+    count=$[count+1]
+    tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+    func_install $name
+done
+
+
+cp -rf $installed_dir/Personal/settings/qtile* $HOME/.config/
+cp -rf $installed_dir/Personal/settings/sxhkd* $HOME/.config/
 
 echo
 tput setaf 6

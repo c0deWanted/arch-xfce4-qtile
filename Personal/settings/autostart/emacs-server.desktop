@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=emacs-server
+Comment=
+Exec=xfce4-terminal -e '/usr/bin/emacs --daemon &'
+TryExec=xfce4-terminal -e '/usr/bin/emacs --daemon &'
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
+Terminal=false
+Hidden=false

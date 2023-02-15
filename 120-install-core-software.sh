@@ -114,7 +114,7 @@ sudo pacman -S --noconfirm --needed inxi
 sudo pacman -S --noconfirm --needed kvantum
 sudo pacman -S --noconfirm --needed linux-firmware-qlogic
 sudo pacman -S --noconfirm --needed lshw
-sudo pacman -S --noconfirm --needed lxappearance
+#sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed man-db
 sudo pacman -S --noconfirm --needed man-pages
 sudo pacman -S --noconfirm --needed mlocate
@@ -140,6 +140,7 @@ sudo pacman -S --noconfirm --needed pavucontrol
 sudo pacman -S --noconfirm --needed peek
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed polkit-gnome
+sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed python-pylint
 sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed pv

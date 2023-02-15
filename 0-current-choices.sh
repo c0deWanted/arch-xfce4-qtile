@@ -53,6 +53,7 @@ sh 100-install-nemesis-software*
 sh 110-install-arcolinux-software*
 sh 120-install-core-software*
 #sh 130-install-leftwm*
+sh 140-install-qtile*
 #sh 150-install-chadwm*
 sh 160-install-bluetooth*
 sh 170-install-cups*
@@ -74,8 +75,7 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 cd $installed_dir/Personal
 
 sh 999-skel*
-#sh 900-*
-sh 910-*
+sh 900-*
 #sh 920-*
 #sh 940-*
 

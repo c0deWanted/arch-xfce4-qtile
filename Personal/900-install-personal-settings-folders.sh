@@ -34,22 +34,26 @@ echo
 
 cp -rf $installed_dir/settings/alacritty* $HOME/.config/
 cp -rf $installed_dir/settings/archlinux-logout* $HOME/.config/
+cp -rf $installed_dir/settings/autostart* $HOME/.config/
+cp -rf $installed_dir/settings/conky* $HOME/.config/
 cp -rf $installed_dir/settings/dconf* $HOME/.config/
 cp -rf $installed_dir/settings/deadbeef* $HOME/.config/
 cp -rf $installed_dir/settings/flameshot* $HOME/.config/
 cp -rf $installed_dir/settings/gtk-3.0* $HOME/.config/
-cp -rf $installed_dir/settings/htop* $HOME/.config/
-#cp -rf $installed_dir/settings/Kvantum* $HOME/.config/
+cp -rf $installed_dir/settings/Kvantum* $HOME/.config/
 cp -rf $installed_dir/settings/mpv* $HOME/.config/
 cp -rf $installed_dir/settings/neofetch* $HOME/.config/
 cp -rf $installed_dir/settings/paru* $HOME/.config/
 cp -rf $installed_dir/settings/polybar* $HOME/.config/
-cp -rf $installed_dir/settings/pulse* $HOME/.config/
+#cp -rf $installed_dir/settings/pulse* $HOME/.config/
 cp -rf $installed_dir/settings/qt5ct* $HOME/.config/
 cp -rf $installed_dir/settings/rofi* $HOME/.config/
 cp -rf $installed_dir/settings/solaar* $HOME/.config/
 cp -rf $installed_dir/settings/Thunar* $HOME/.config/
 cp -rf $installed_dir/settings/volumeicon* $HOME/.config/
+cp -rf $installed_dir/settings/xfce4* $HOME/.config/
+
+cp -rf $installed_dir/home/oh* /home/
 
 ####################################################
 
