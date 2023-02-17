@@ -124,8 +124,10 @@ sudo pacman -S --noconfirm --needed mintstick-git
 sudo pacman -S --noconfirm --needed most
 sudo pacman -S --noconfirm --needed mpv
 sudo pacman -S --noconfirm --needed neofetch
+sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed network-manager-applet
 sudo pacman -S --noconfirm --needed networkmanager-openvpn
+sudo pacman -S --noconfirm --needed nm-connection-editor
 sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed nomacs
 sudo pacman -S --noconfirm --needed noto-fonts
@@ -223,6 +225,8 @@ if grep -q "archlinux" /etc/os-release; then
 fi
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo systemctl start NetworkManager
+sudo systemctl enable NetworkManager
 
 ###############################################################################################
 
