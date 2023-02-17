@@ -26,7 +26,6 @@
       <value type="string" value="Package Manager"/>
       <value type="string" value="pasystray"/>
       <value type="string" value="pragha"/>
-      <value type="string" value="qtile"/>
       <value type="string" value="Spotify"/>
       <value type="string" value="System Config Printer Notification"/>
       <value type="string" value="Terminal"/>
@@ -54,9 +53,6 @@
   <property name="log-level-apps" type="uint" value="0"/>
   <property name="expire-timeout" type="int" value="5"/>
   <property name="initial-opacity" type="double" value="1"/>
-  <property name="primary-monitor" type="uint" value="1"/>
+  <property name="primary-monitor" type="uint" value="0"/>
   <property name="theme" type="string" value="Default"/>
-  <property name="do-not-disturb" type="bool" value="false"/>
-  <property name="do-slideout" type="bool" value="false"/>
-  <property name="log-max-size-enabled" type="bool" value="true"/>
 </channel>
